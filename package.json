@@ -1,0 +1,30 @@
+{
+  "name": "maek",
+  "description": "**Maek** is like **make**, but a bit mixed up.",
+  "version": "1.0.0",
+  "main": "Maekfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.31"
+  },
+  "scripts": {
+	 "build": "tsc",
+    "test": "rm -rf maek-cache.json objs/ test/ ; node --enable-source-maps out/Maekfile.js :test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ixchow/maek.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ixchow/maek/issues"
+  },
+  "homepage": "https://github.com/ixchow/maek#readme",
+  "dependencies": {
+    "typescript": "^4.6.4"
+  }
+}

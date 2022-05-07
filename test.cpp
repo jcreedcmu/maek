@@ -2,6 +2,7 @@
 #include "Level.hpp"
 
 #include <cassert>
+#include <iostream>
 
 int main(int argc, char **argv) {
 	{ //test player starting health:
@@ -13,6 +14,8 @@ int main(int argc, char **argv) {
 		Level level;
 		assert(level.tiles.size() == 10);
 	}
+
+	std::cout << "Success.\n";
 
 	return 0;
 }
